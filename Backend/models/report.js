@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const sequelize = require('../util/database');
 
 const Report = sequelize.define('report',{
-    date: Sequelize.DATE,
+    date: Sequelize.STRING,
     id:{
         type: Sequelize.INTEGER,
         allowNull:false,

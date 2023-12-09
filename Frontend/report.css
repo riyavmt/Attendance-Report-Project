@@ -5,3 +5,16 @@ h1{
 .list-container{
     display: none
 }
+
+#search{
+    background-color: blue;
+}
+
+#fetch{
+    background-color: green;
+    padding: 5px 10px;
+}
+
+#mark{
+    background-color: green;
+}

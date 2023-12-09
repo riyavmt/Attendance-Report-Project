@@ -15,9 +15,11 @@
         <form id = "myForm" class="me-5">
             <label for = "date" class = "form-label">Search for date: </label>
             <input type = "date" class = "form-control" name = "date" id = "date"><br>
-            <button class = "btn btn-sm btn-dark" type="submit">Search</button>
+            <button id = "search" class = "btn btn-sm btn-dark" type="submit">Search</button>
         </form>
-        <button class = "btn btn-sm btn-dark w-2" type="click">Fetch Attendance Report</button>
+        <div>
+            <button id = "fetch" class = "btn btn-sm btn-dark w-100" type="click">Fetch Attendance Report</button>
+        </div>
     </div>
     <br>
     <div class = "list-container">
@@ -39,6 +41,9 @@
         </li>
         <br>
         <button id="mark" class = "btn btn-sm btn-dark" type="click">Mark Attendance</button>
+    </div>
+    <div>
+        <ul class = "attendanceList">Attendance list:</ul>
     </div>
     <script src = "report.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
